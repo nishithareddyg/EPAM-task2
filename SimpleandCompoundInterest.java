@@ -16,12 +16,14 @@ public class SimpleandCompoundInterest {
 	        this.rateofInterest=rateofInterest;
 	        this.timeperiod = timeperiod;
 	  }
-	    public int SimpleInterest()
+	    public int SimpleInterest(int principle,int rateofInterest,int timepreriod)
 	    { 
+	    	Interest(principle,rateofInterest,timepreriod);
 		   return principle*rateofInterest*timeperiod/100;
 	    }
-	    public double CompoundInterest()
+	    public double CompoundInterest(int principle,int rateofInterest,int timepreriod)
 	    { 
+	    	Interest(principle,rateofInterest,timepreriod);
 		return principle *(Math.pow((1 + rateofInterest / 100),timeperiod));  
 	    }
 	    
